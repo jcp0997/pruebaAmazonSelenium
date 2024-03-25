@@ -1,0 +1,116 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2023-12-28T02:34:33.214Z",
+        "line": 14,
+        "name": "As a customer when I search for Nintendo, I want to see if the third option on the second page is available for purchase and can be added to the cart.",
+        "description": "",
+        "id": "testing-different-actions-on-amazon;as-a-customer-when-i-search-for-nintendo--i-want-to-see-if-the-third-option-on-the-second-page-is-available-for-purchase-and-can-be-added-to-the-cart.;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 12334639300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user navigate to www.amazon.com",
+            "match": {
+              "location": "steps.AmazonSteps.navigatToAmazonPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 14523149100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "search for Playstation 4",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Playstation 4",
+                  "offset": 11
+                }
+              ],
+              "location": "steps.AmazonSteps.searchCriteria(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6371842600,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "navigate to page number 2",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 24
+                }
+              ],
+              "location": "steps.AmazonSteps.goToSecondPage(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 11219447000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "select item 3",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 12
+                }
+              ],
+              "location": "steps.AmazonSteps.selectThirdItem(int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7087248000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the user is able to add it to the cart",
+            "match": {
+              "location": "steps.AmazonSteps.addToCart()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Amazon"
+          }
+        ]
+      }
+    ],
+    "name": "Testing different actions on Amazon",
+    "description": "",
+    "id": "testing-different-actions-on-amazon",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Amazon.feature",
+    "tags": [
+      {
+        "name": "@Amazon",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
